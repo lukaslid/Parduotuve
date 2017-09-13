@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Pagrindinis<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Pagrindinis<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Visi užsakymai</a>
+                <a class="nav-link" href="/orders">Visi užsakymai</a>
             </li>
         </ul>
     </div>

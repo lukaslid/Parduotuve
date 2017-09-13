@@ -25,4 +25,10 @@ class OrderController extends Controller
 
         return redirect('/');
     }
+
+    public function show()
+    {
+        $orders = Order::latest()->get();
+        return view('orders.show', compact('orders'));
+    }
 }
