@@ -5,13 +5,23 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-9">
+            <div class="col-8">
                 @include('orders.create')
+                <img src="icons/chess.jpg" class="img-fluid" alt="Pavyzdinė nuotrauka">
+
             </div>
             <div class="col">
-                <h3>YOOOOO</h3>
-                <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-                <p>Back to minus the navbar.</p>
+                <h3>Informacija</h3>
+                <ul>
+                    <li>Kaina: Šachmatų rinkinys - 250€  </li>
+                    <li>Šachmatų rinkinį sudaro :</li>
+                    <ul>
+                        <li >Sulankstoma šachmatų lenta tokia, kaip pavaizduota nuotraukose</li>
+                        <li>Šachmatų figūros</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <li>Item 3</li>
+                </ul>
             </div>
         </div>
     </div>
