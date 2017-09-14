@@ -7,6 +7,5 @@ $factory->define(App\Order::class, function (Faker $faker) {
         'full_name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'number' => $faker->phoneNumber,
-        'amount' => $faker->biasedNumberBetween(1,3)
     ];
 });

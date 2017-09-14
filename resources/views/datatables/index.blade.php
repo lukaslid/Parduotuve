@@ -9,7 +9,6 @@
             <th>Pilnas vardas</th>
             <th>El. paštas</th>
             <th>Tel. nr.</th>
-            <th>Užsakymo kiekis</th>
             <th>Užsakymo data</th>
         </tr>
         </thead>
@@ -29,7 +28,6 @@
                     { data: 'full_name', name: 'full_name' },
                     { data: 'email', name: 'email' },
                     { data: 'number', name: 'number' },
-                    { data: 'amount', name: 'amount' },
                     { data: 'created_at', name: 'created_at' }
                 ]
             });
