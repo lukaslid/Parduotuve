@@ -6,7 +6,7 @@
     <table class="table table-bordered" id="orders-table">
         <thead>
         <tr>
-            <th>Pilnas vardas</th>
+            <th>Vardas, Pavardė</th>
             <th>El. paštas</th>
             <th>Tel. nr.</th>
             <th>Užsakymo data</th>

@@ -1,6 +1,16 @@
+<h3>Apie produktą</h3>
 <p>
-
+    Vienetinė, keraminė rankų gamybos šachmatų lenta su graikų olimpo dievų figūromis.
+<p>
+<p>
+    Figūros:
+    Dzeusas yra karalius, Atėna Dzeuso dukra - karalienė, Poseidonas - rikis, Pegasas - žirgas, bokštai primena 5-ojo amžiaus pr. Kr. jonėnų orderio stulpus.
 </p>
+<p>
+Šachmatų rinkinio pagaminimas užtruka apie 1-3 savaites priklausomai nuo pirkėjų kiekio. Dėl papildomos informacijos kreiptis kontaktais nurodytais apačioje.
+</p>
+
+<h4>Šachmatų rinkinio nuotraukos</h4>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
@@ -28,3 +38,7 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+<br>
+<p>
+    Sudomino? Spauskite užsakyti!
+</p>

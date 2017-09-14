@@ -1,4 +1,4 @@
-<div class="col">
+<div class="col table-bordered">
     <h3>Informacija</h3>
     <ul>
         <li>Kaina: Šachmatų rinkinys - 400€.</li>
@@ -7,8 +7,6 @@
             <li>Sulankstoma šachmatų lenta,</li>
             <li>Šachmatų figūros.</li>
         </ul>
-        <li>Šachmatų lentos pagaminimas užtruka apie 1-3 savaites priklausomai nuo pirkėjų kiekio.</li>
-        <li>Dėl šachmatų lentos pagaminimo informuosime žinute bei el. laišku, ją turėsite atsiimti nurodytu adresu. </li>
-        <li>Dėl papildomos informacijos kreiptis kontaktais nurodytais apačioje.</li>
+        <li>Dėl šachmatų rinkinio pagaminimo informuosime žinute bei el. laišku, ją turėsite atsiimti nurodytu adresu. </li>
     </ul>
 </div>
