@@ -1,8 +1,7 @@
 <form action="/" method="post">
-
-    <legend>Užsakymo forma</legend>
-
     {{ csrf_field() }}
+
+    <h3>Užsakymo forma</h3>
 
     <div class="form-group">
         <label for="full_name" class="col-sm-2 control-label">Vardas Pavardė</label>
