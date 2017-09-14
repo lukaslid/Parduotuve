@@ -16,8 +16,6 @@ class DatatablesController extends Controller
      */
     public function getIndex()
     {
-        $orders = DB::table('orders')->select('*');
-        dd($orders);
         return view('datatables.index');
     }
 
@@ -28,9 +26,6 @@ class DatatablesController extends Controller
      */
     public function getOrders()
     {
-        $orders = DB::table('orders')->select('*');
-        dd($orders);
-        return Datatables::of($orders)
-            ->make(true);
+        return datatables()->collection(Order::all())->toJson();
     }
 }
