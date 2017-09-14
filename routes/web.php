@@ -13,5 +13,11 @@
 Route::get('/', 'OrderController@index');
 Route::post('/', 'OrderController@store');
 
-Route::get('/orders', 'OrderController@show');
+//Route::get('', 'DatatablesController@getIndex', [
+//    'anyData'  => 'datatables.data',
+//    'getIndex' => 'datatables',
+//]);
+
+Route::get('orders', ['uses'=>'DatatablesController@getIndex']);
+Route::get('orders/all', ['as'=>'datatables.getorders','uses'=>'DatatablesController@getOrders']);
 
