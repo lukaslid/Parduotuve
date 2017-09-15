@@ -1,9 +1,9 @@
-<form action="/" method="post">
+<form id="create_order" action="/" method="post">
     {{ csrf_field() }}
 
     <div class="form-group">
         <label for="full_name" class="col-sm-7 control-label">Vardas, Pavardė</label>
-        <div class="col-sm-10" >
+        <div class="col-sm-10">
             <input type="text" class="form-control" name="full_name" id="full_name" required>
         </div>
     </div>
@@ -24,8 +24,8 @@
 
     <div class="form-group text-center">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">Užsakyti</button>
+            <button class="btn btn-primary">Užsakyti</button>
         </div>
     </div>
-
 </form>
+@include('errors.message')

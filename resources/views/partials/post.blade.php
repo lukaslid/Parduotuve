@@ -4,10 +4,12 @@
 <p>
 <p>
     Figūros:
-    Dzeusas yra karalius, Atėna Dzeuso dukra - karalienė, Poseidonas - rikis, Pegasas - žirgas, bokštai primena 5-ojo amžiaus pr. Kr. jonėnų orderio stulpus.
+    Dzeusas yra karalius, Atėna Dzeuso dukra - karalienė, Poseidonas - rikis, Pegasas - žirgas, bokštai primena 5-ojo
+    amžiaus pr. Kr. jonėnų orderio stulpus.
 </p>
 <p>
-Šachmatų rinkinio pagaminimas užtruka apie 1-3 savaites priklausomai nuo pirkėjų kiekio. Dėl papildomos informacijos kreiptis kontaktais nurodytais apačioje.
+    Šachmatų rinkinio pagaminimas užtruka apie 1-3 savaites priklausomai nuo pirkėjų kiekio. Dėl papildomos informacijos
+    kreiptis kontaktais nurodytais apačioje.
 </p>
 
 <h4>Šachmatų rinkinio nuotraukos</h4>
@@ -20,7 +22,7 @@
             <img class="d-block img-fluid" width="100%" src="/icons/chess2.jpg">
         </div>
         <div class="carousel-item">
-            <img class="d-block img-fluid" width="100% "src="icons/chess3.jpg">
+            <img class="d-block img-fluid" width="100% " src="icons/chess3.jpg">
         </div>
         <div class="carousel-item">
             <img class="d-block img-fluid" width="100%" src="icons/chess4.jpg">

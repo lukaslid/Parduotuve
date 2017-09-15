@@ -13,6 +13,14 @@ class OrderController extends Controller
     }
     public function store()
     {
+        $this->validate(request(),[
+            'full_name' => 'required|min:6',
+            'number' => 'required|max:15',
+            'email' => 'required|email',
+        ]);
+
+
+
         $order = new Order;
         $order->fill([
             'full_name' => request('full_name'),
