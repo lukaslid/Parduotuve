@@ -29,4 +29,3 @@
         </div>
     </div>
 </form>
-@include('errors.message')

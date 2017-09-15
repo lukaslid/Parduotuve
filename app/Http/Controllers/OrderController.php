@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderReceived;
 use Illuminate\Http\Request;
 use App\Order;
+use Illuminate\Support\Facades\Mail;
+
 
 class OrderController extends Controller
 {
@@ -13,14 +16,6 @@ class OrderController extends Controller
     }
     public function store()
     {
-        $this->validate(request(),[
-            'full_name' => 'required|min:6',
-            'number' => 'required|max:15',
-            'email' => 'required|email',
-        ]);
-
-
-
         $order = new Order;
         $order->fill([
             'full_name' => request('full_name'),
@@ -28,6 +23,8 @@ class OrderController extends Controller
             'email' => request('email'),
         ]);
         $order->save();
+
+        Mail::to($order['email'])->send(new OrderReceived($order));
 
         return redirect('/');
     }
