@@ -21,13 +21,6 @@ class OrderController extends Controller
         ]);
         $order->save();
 
-
         return redirect('/');
-    }
-
-    public function show()
-    {
-        $orders = Order::latest()->get();
-        return view('orders.show', compact('orders'));
     }
 }

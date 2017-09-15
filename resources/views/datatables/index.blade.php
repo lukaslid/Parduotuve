@@ -2,6 +2,9 @@
 
 @section('content')
     <div class="container">
+        <div class="text-center">
+            <h3>Užsakymai</h3>
+        </div>
         <div class="row">
     <table class="table table-bordered" id="orders-table">
         <thead>
@@ -29,7 +32,8 @@
                     { data: 'email', name: 'email' },
                     { data: 'number', name: 'number' },
                     { data: 'created_at', name: 'created_at' }
-                ]
+                ],
+                "order" : [[3, "desc"]]
             });
         });
     </script>
