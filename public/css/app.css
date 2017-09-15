@@ -68,3 +68,10 @@ code {
   font-size: 80%;
 }
 
+/* Error */
+
+label > .error {
+  color: #ff0000;
+  background-color: #FFF;
+}
+

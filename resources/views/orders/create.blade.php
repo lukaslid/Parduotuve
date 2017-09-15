@@ -24,7 +24,8 @@
 
     <div class="form-group text-center">
         <div class="col-sm-offset-2 col-sm-10">
-            <button class="btn btn-primary">Užsakyti</button>
+            <button class="btn btn-primary" name="create">Patvirtinti</button>
+            <button class="btn btn-default" name="cancel" data-dismiss="modal">Uždaryti</button>
         </div>
     </div>
 </form>

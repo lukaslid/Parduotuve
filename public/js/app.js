@@ -761,58 +761,6 @@ module.exports = __webpack_require__(35);
 
 __webpack_require__(9);
 
-$(document).ready(function () {
-    $('#create_order').formValidation({
-        framework: 'bootstrap',
-        err: {
-            container: '#errors'
-        },
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            full_name: {
-                validators: {
-                    notEmpty: {
-                        message: 'The username is required'
-                    },
-                    stringLength: {
-                        min: 6,
-                        max: 40,
-                        message: 'Įveskite savo pilną vardą'
-                    }
-                }
-            },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Įveskite savo el. paštą'
-                    },
-                    emailAddress: {
-                        message: 'Blogai įvestas el. paštas'
-                    }
-                }
-            },
-            number: {
-                validators: {
-                    notEmpty: {
-                        message: 'The password is required'
-                    },
-                    different: {
-                        field: 'username',
-                        message: 'The password cannot be the same as username'
-                    }
-                }
-            }
-        }
-    }).on('err.form.fv', function (e) {
-        // Show the message modal
-        $('#messageModal').modal('show');
-    });
-});
-
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
