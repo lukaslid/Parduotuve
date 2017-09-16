@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('', 'OrderController@index');
-Route::post('', 'OrderController@store');
+Route::get('/', 'OrderController@index');
+Route::post('/', 'OrderController@store');
 
 //Route::get('', 'DatatablesController@getIndex', [
 //    'anyData'  => 'datatables.data',
