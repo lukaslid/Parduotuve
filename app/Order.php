@@ -12,7 +12,7 @@ class Order extends Model
         $this->completed = true;
         $this->save();
     }
-    public function UnComplete()
+    public function InComplete()
     {
         $this->completed = false;
         $this->save();

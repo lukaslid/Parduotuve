@@ -23,7 +23,7 @@ Route::get('orders/all', ['as'=>'datatables.getorders','uses'=>'DatatablesContro
 
 
 Route::get('orders/makeComplete/{order}', 'DatatablesController@makeComplete');
-Route::get('orders/unComplete/{order}', 'DatatablesController@unComplete');
+Route::get('orders/unComplete/{order}', 'DatatablesController@inComplete');
 
 
 

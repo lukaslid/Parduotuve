@@ -34,10 +34,9 @@ class DatatablesController extends Controller
         Mail::to($order['email'])->send(new OrderCompleted($order));
         return back();
     }
-    public function unComplete(Order $order)
+    public function inComplete(Order $order)
     {
-        $order->UnComplete();
+        $order->InComplete();
         return back();
-
     }
 }

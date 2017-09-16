@@ -57,13 +57,13 @@
                             if (row.completed === 0) {
                                 str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/makeComplete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus įvykdytas.\')" class="success">Užbaigti</a>';
                             } else {
-                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/unComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Atšaukti</a>';
+                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/inComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Atšaukti</a>';
                             }
                             return str;
                         }
                     }
                 ],
-                "order" : [[3, "desc"]]
+                "order" : [[4, "desc"]]
             });
         });
     </script>
