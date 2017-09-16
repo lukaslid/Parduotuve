@@ -15,7 +15,7 @@
             <th>Tel. nr.</th>
             <th>Užsakymo data</th>
             <th>Užsakymas baigtas</th>
-            <th>bl</th>
+            <th>Keisti užsakymo statusą</th>
         </tr>
         </thead>
     </table>
@@ -55,9 +55,9 @@
                         "render": function (data, type, row, meta) {
                             var str;
                             if (row.completed === 0) {
-                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/makeComplete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus įvykdytas.\')" class="success">Complete</a>';
+                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/makeComplete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus įvykdytas.\')" class="success">Užbaigti</a>';
                             } else {
-                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/unComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Uncomplete</a>';
+                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/unComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Atšaukti</a>';
                             }
                             return str;
                         }
