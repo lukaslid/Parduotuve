@@ -18,8 +18,8 @@ Route::post('', 'OrderController@store');
 //    'getIndex' => 'datatables',
 //]);
 
-Route::get('orders', ['uses'=>'DatatablesController@getIndex']);
-Route::get('orders/all', ['as'=>'datatables.getorders','uses'=>'DatatablesController@getOrders']);
+Route::post('orders', ['uses'=>'DatatablesController@getIndex']);
+Route::post('orders/all', ['as'=>'datatables.getorders','uses'=>'DatatablesController@getOrders']);
 
 
 Route::get('orders/makeComplete/{order}', 'DatatablesController@makeComplete');
