@@ -32,11 +32,11 @@ class DatatablesController extends Controller
     {
         $order->Complete();
         Mail::to($order['email'])->send(new OrderCompleted($order));
-        return back();
+        return redirect('/');
     }
     public function inComplete(Order $order)
     {
         $order->InComplete();
-        return back();
+        return redirect('/');
     }
 }
