@@ -15,6 +15,6 @@
     Apie šachmatų rinkinio pagaminimą informuosime el. laišku bei žinute nurodytu telefonu numeriu.
 
 
-    Dėkojame, kad pirkote,<br>
+    Dėkojame, kad pirkote,
     {{ config('app.name') }}
 @endcomponent

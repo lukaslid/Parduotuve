@@ -55,11 +55,9 @@
                         "render": function (data, type, row, meta) {
                             var str;
                             if (row.completed === 0) {
-                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/makeComplete/'+ row.id +'" class="success">Complete</a>';
-
+                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/makeComplete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus įvykdytas.\')" class="success">Complete</a>';
                             } else {
-                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/unComplete/' + row.id +'" class="danger">Uncomplete</a>';
-                                str.href += data.id;
+                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/unComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Uncomplete</a>';
                             }
                             return str;
                         }

@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container">
         <span class="text-muted">
-            Kontaktai: Kauno g. 10,     Tel. nr: 8611111111,    El. paštas: lukaslid@gmail.com
+            Kontaktai: {{Config::get('constants.order.address')}};,     {{Config::get('constants.order.telephone')}};,    {{Config::get('constants.order.email')}};
         </span>
     </div>
 </footer>

@@ -1,10 +1,10 @@
 @component('mail::message')
     # Užsakymas baigtas!
 
-    Užsakymą galite atsiimti nurodytu adresu: Kauno 10.
+    Užsakymą galite atsiimti nurodytu adresu: {{Config::get('constants.order.address')}};.
 
-    Dėl daugiau informacijos skambinkite 861111111 arba rašykit el. paštu: lukas@gmail.com
+    Dėl daugiau informacijos skambinkite {{Config::get('constants.order.telephone')}}; arba rašykit el. paštu: {{Config::get('constants.order.email')}};
 
-    Thanks,<br>
+    Thanks,
     {{ config('app.name') }}
 @endcomponent

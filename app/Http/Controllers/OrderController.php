@@ -20,7 +20,6 @@ class OrderController extends Controller
             'full_name' => request('full_name'),
             'number' => request('number'),
             'email' => request('email'),
-            'completed' => request('completed')
         ]);
         $order->save();
 
