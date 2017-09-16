@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Yajra\Datatables\Datatables;
 use App\Order;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\OrderCompleted;
 
 class DatatablesController extends Controller
 {
@@ -27,5 +27,17 @@ class DatatablesController extends Controller
     public function getOrders()
     {
         return datatables()->collection(Order::all())->toJson();
+    }
+    public function makeComplete(Order $order)
+    {
+        $order->Complete();
+        Mail::to($order['email'])->send(new OrderCompleted($order));
+        return back();
+    }
+    public function unComplete(Order $order)
+    {
+        $order->UnComplete();
+        return back();
+
     }
 }

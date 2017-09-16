@@ -21,3 +21,9 @@ Route::post('/', 'OrderController@store');
 Route::get('orders', ['uses'=>'DatatablesController@getIndex']);
 Route::get('orders/all', ['as'=>'datatables.getorders','uses'=>'DatatablesController@getOrders']);
 
+
+Route::get('orders/makeComplete/{order}', 'DatatablesController@makeComplete');
+Route::get('orders/unComplete/{order}', 'DatatablesController@unComplete');
+
+
+

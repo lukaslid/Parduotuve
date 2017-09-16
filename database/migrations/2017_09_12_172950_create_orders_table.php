@@ -18,6 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('full_name');
             $table->string('number');
             $table->text('email');
+            $table->boolean('completed')->default(false);
             $table->timestamps();
         });
     }

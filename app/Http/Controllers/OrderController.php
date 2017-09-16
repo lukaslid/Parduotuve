@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\OrderReceived;
-use Illuminate\Http\Request;
+use App\Mail\OrderCreated;
 use App\Order;
 use Illuminate\Support\Facades\Mail;
 
@@ -21,10 +20,11 @@ class OrderController extends Controller
             'full_name' => request('full_name'),
             'number' => request('number'),
             'email' => request('email'),
+            'completed' => request('completed')
         ]);
         $order->save();
 
-        Mail::to($order['email'])->send(new OrderReceived($order));
+        Mail::to($order['email'])->send(new OrderCreated($order));
 
         return redirect('/');
     }

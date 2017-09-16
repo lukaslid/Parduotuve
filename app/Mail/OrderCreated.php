@@ -8,10 +8,9 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Order;
 
-class OrderReceived extends Mailable
+class OrderCreated extends Mailable
 {
     use Queueable, SerializesModels;
-
     public $order;
     /**
      * Create a new message instance.
@@ -30,6 +29,6 @@ class OrderReceived extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.orderReceived');
+        return $this->markdown('emails.order-created');
     }
 }
