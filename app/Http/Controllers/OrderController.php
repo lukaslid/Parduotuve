@@ -25,6 +25,6 @@ class OrderController extends Controller
 
         Mail::to($order['email'])->send(new OrderCreated($order));
 
-        return redirect('');
+        return redirect('/');
     }
 }
