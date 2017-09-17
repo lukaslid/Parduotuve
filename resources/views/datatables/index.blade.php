@@ -6,7 +6,7 @@
             <h3>Užsakymai</h3>
         </div>
         <div class="row">
-    <table class="table table-bordered" id="orders-table">
+    <table class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%" id="orders-table">
         <thead>
         <tr>
             <th>ID</th>
@@ -63,7 +63,20 @@
                         }
                     }
                 ],
-                "order" : [[4, "desc"]]
+                "order" : [[4, "desc"]],
+                "language": {
+                    "emptyTable": "Užsakymų nėra",
+                    "info":           "Rodomas _PAGE_ iš _PAGES_ puslapių",
+                    "lengthMenu": "Rodoma _MENU_ įrašų",
+                    "search": "Ieškoti:",
+                    "paginate": {
+                        "first":      "Pirmas",
+                        "last":       "Paskutinis",
+                        "next":       "Kitas",
+                        "previous":   "Ankstesnis"
+                    }
+
+                }
             });
         });
     </script>
