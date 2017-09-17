@@ -57,7 +57,7 @@
                             } else {
                                 str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/inComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Atšaukti</a>';
                             }
-                            var del = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/Delete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus ištrintas \')" class="success">Ištrinti</a>';
+                            var del = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/Delete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus ištrintas \')" class="success">      "defaultContent": "<button>Edit</button>"gi</a>';
                             return str + "    " + del;
 
                         }
