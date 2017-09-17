@@ -58,7 +58,7 @@
                                 str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/inComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Atšaukti</a>';
                             }
                             var del = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/Delete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus ištrintas \')" class="success">Ištrinti</a>';
-                            return str + del;
+                            return str + " " + del;
 
                         }
                     }

@@ -24,6 +24,7 @@ Route::get('orders/all', ['as'=>'datatables.getorders','uses'=>'DatatablesContro
 
 Route::get('orders/makeComplete/{order}', 'DatatablesController@makeComplete');
 Route::get('orders/inComplete/{order}', 'DatatablesController@inComplete');
+Route::get('orders/Delete/{order}', 'DatatablesController@destroy');
 
 
 

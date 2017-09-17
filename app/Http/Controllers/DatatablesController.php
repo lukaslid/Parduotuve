@@ -39,4 +39,10 @@ class DatatablesController extends Controller
         $order->InComplete();
         return back();
     }
+
+    public function destroy(Order $order)
+    {
+        $order->delete();
+        return back();
+    }
 }
