@@ -23,7 +23,7 @@ class OrderController extends Controller
         ]);
         $order->save();
 
-        Mail::to($order['email'])->send(new OrderCreated($order));
+        //Mail::to($order['email'])->send(new OrderCreated($order)); commented out, because waiting for mailgun domain verification
 
         return redirect('/');
     }

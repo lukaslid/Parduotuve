@@ -31,7 +31,7 @@ class DatatablesController extends Controller
     public function makeComplete(Order $order)
     {
         $order->Complete();
-        Mail::to($order['email'])->send(new OrderCompleted($order));
+        //Mail::to($order['email'])->send(new OrderCompleted($order)); commented out, because waiting for mailgun domain verification
         return back();
     }
     public function inComplete(Order $order)
