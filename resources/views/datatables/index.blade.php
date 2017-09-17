@@ -1,7 +1,7 @@
 @extends('partials.layout')
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="text-center">
             <h3>Užsakymai</h3>
         </div>
