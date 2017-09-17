@@ -53,11 +53,11 @@
                         "render": function (data, type, row, meta) {
                             var str;
                             if (row.completed === false) {
-                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/makeComplete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus įvykdytas. \')" class="success">Užbaigti</a>';
+                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/makeComplete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus įvykdytas. \')" class="success"><button>Užbaigti</button></a>';
                             } else {
-                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/inComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger">Atšaukti</a>';
+                                str = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/inComplete/' + row.id +'" onclick="return confirm(\'Ar tikrai norite grąžinti užsakymo statusą?\')" class="danger"><button>Atšaukti</button></a>';
                             }
-                            var del = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/Delete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus ištrintas \')" class="success">      "defaultContent": "<button>Edit</button>"gi</a>';
+                            var del = '<a class="complete-action-button" data-id="' + row.id + '" href="orders/Delete/'+ row.id +'" onclick="return confirm(\'Užsakymas bus ištrintas \')" class="success"> "<button>Ištrinti</button>"</a>';
                             return str + "    " + del;
 
                         }
