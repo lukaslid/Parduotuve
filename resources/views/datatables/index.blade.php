@@ -48,7 +48,7 @@
                         }
                     },
                     {
-                        "targets": 5,//number of column you want
+                        "targets": 5,
                         "data": "completed",
                         "render": function (data, type, row, meta) {
                             var str;
