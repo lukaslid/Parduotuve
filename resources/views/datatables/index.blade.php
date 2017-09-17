@@ -6,7 +6,7 @@
             <h3>Užsakymai</h3>
         </div>
         <div class="row">
-    <table class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%" id="orders-table">
+    <table class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="80%" id="orders-table">
         <thead>
         <tr>
             <th>ID</th>
