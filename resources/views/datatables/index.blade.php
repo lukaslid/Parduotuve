@@ -5,7 +5,6 @@
         <div class="text-center">
             <h3>Užsakymai</h3>
         </div>
-        <div class="row">
     <table class="table table-striped table-bordered dt-responsive compact nowrap" cellspacing="0" width="80%" id="orders-table">
         <thead>
         <tr>
@@ -19,7 +18,6 @@
         </tr>
         </thead>
     </table>
-        </div>
     </div>
 @stop
 
